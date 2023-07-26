@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <title>HomeWork3</title>
+</head>
+<body>
+
+
+<header>
+<div class="featured-products">
+<h4>Featured Products</h4>
+</div>
+
+<div class="cards-box">
+<div class="cards-image">
+
+  <img class="card-img" src="images/watch.jpeg" alt="watch">
+  <img class="card-img" src="images/shampo.jpg" alt="shampo">
+  <img class="card-img" src="images/mac.jpeg" alt="mac">
+  <img class="card-img" src="images/headph.jpeg" alt="mac">
+</div>
+
+<div class="cards-description">
+
+  <p>Dummy Variable Product</p>
+  <span>$19.99</span>
+ 
+  <p>Dummy Sale Product</p>
+  <span>$19.99</span>
+
+  <p>Dummy Simple Product</p>
+  <span>$14.99</span>
+
+  <p>Out of stock Product</p>
+  <span>$9.99</span>
+</div>
+</header>
+
+</body>
+
+
+</body>
+</html>

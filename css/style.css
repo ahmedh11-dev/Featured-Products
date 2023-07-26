@@ -7,69 +7,166 @@
 
 
 body{
-
     display: flex;
     justify-content: center;
-    align-items: center;
     width: 100%;
     height: 100vh;
-    background-color: #e2e2e2;
+    background-image: linear-gradient(180deg, #0093E9 0%, #80D0C7 100%);
     font-family: Arial, Helvetica, sans-serif;
-
 }
 
-.textbox {
+.featured-products {
 
     display: flex;
-    justify-content: center;
+    margin: 30px;
     align-items: center;
-    width: 200px;
-    height: 80px;
-    font-size: 30px;
-    margin: auto;
-    margin-top: 250px;
-    background-color: crimson;
+    justify-content: center;
     color: white;
-    transition: 0.3s ease;
+    background-color: #0a4a75;
+    width: 200px;
+    height: 50px;
     cursor: pointer;
-    z-index: 1;
+}
+
+.cards-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 60px;
+    margin-bottom: 60px;
 
 }
 
-.tooltip {
+.card-img {
 
-    visibility: hidden;
+    display: flex;
+    justify-content: space-around;
+    object-fit: cover;
+    width: 250px;
+    height: 220px;
+}
+
+
+.product1, .product2,
+ .product3, .product4 {
+
+    border: 1px rgb(31, 30, 30);
+    box-shadow: 0px 0px 5px 1px rgb(0, 90, 150);
+    max-width: 250px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.product1:hover, .product2:hover,
+ .product3:hover, .product4:hover {
+
+transform: scale(1.1);
+}
+
+.card-text {
+
+    text-align: center;
+    margin: 20px;
+    color: #fff;
+}
+
+span.price-product1, .price-product3, .price-product4 {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+}
+
+span.price-product2 {
+
+    position: relative;
+    text-decoration: line-through;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    padding-left: 60px;
+
+}
+
+span.new-price {
+
+    color: rgb(0, 255, 85);
+    padding-left: 10px;
+    font-weight: 700;
+}
+
+span.new-price:after {
+
+    position: relative;
+    bottom: 8px;
+    content: "______";
+    color: rgb(255, 255, 255);
+    padding-left: 10px;
+}
+
+span.price-product2:before {
+
+    content: "______";
     position: absolute;
-    top: 100px;
-    width: 300px;
-    height: 80px;
-    font-size: 30px;
+    bottom: 8px;
+    left: 3px;
+    color: rgb(255, 255, 255);
+}
+
+/* span.price-product2:before {
+
+    content: "______";
+    position: absolute;
+    bottom: 8px;
+    left: 4px;
+    color: darkgrey;
+}
+
+span.price-product2:after {
+
+    content: "______";
+    position: absolute;
+    bottom: 8px;
+    left: 4px;
+    color: darkgrey;
+} */
+
+
+span.price-product1:before,
+.price-product3:before, .price-product4:before
+{
+    content: "__________";
+    position: absolute;
+    bottom: 8px;
+    left: 5px;
+    color: rgb(255, 255, 255);
+}
+span.price-product1:after,
+.price-product3:after, .price-product4:after
+{
+    content: "__________";
+    position: absolute;
+    bottom: 8px;
+    right: 5px;
+    color: rgb(255, 255, 255);
+}
+
+.footer-text {
+
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    margin: 50px;
     padding: 20px;
     text-align: center;
-    background-color: rgb(0, 0, 0);
-    color: white;
-    
+    background-color: #0a4a75;
+    border: 1px rgb(31, 30, 30);
+    box-shadow: 0px 0px 5px 1px rgb(0, 90, 150);
+    transition: all 0.3s ease;
 }
 
-.tooltip:before {
+.footer-text:hover {
 
-    content: "";
-    position: absolute;
-    border: 1px solid rgb(216, 215, 215);
-    border-color: rgb(0, 0, 0) #e2e2e2 #e2e2e2 #e2e2e2;;
-    border-bottom: 0px;
-    border-width: 20px;
-    top: 80px;
-    right: 125px;
-    font-size: 30px;
-    text-align: center;
-    background-color: rgb(0, 0, 0);
-    color: white;
-    
-}
-
-.textbox:hover .tooltip{
-
-visibility: visible;
-
+    transform: scale(1.1);
 }
